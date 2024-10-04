@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>BG - Color Chnager</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="btn" id="color-1">RED</div>
+      <div class="btn" id="color-2">GREEN</div>
+      <div class="btn" id="color-3">BLUE</div>
+      <div class="btn" id="color-4">YELLOW</div>
+      <div class="btn" id="color-5">PURPLE</div>
+      <div class="btn" id="color-6">CYAN</div>
+    </div>
+
+    <div id="color-name" style="margin-top: 24px; font-size: 24px"></div>
+  </body>
+
+  <script>
+    const colorNameElement = document.getElementById("color-name");
+
+    document.getElementById("color-1").onclick = () => {
+      document.body.style.backgroundColor = "rgb(255, 0, 0)";
+      colorNameElement.textContent = "RED";
+    };
+    document.getElementById("color-2").onclick = () => {
+      document.body.style.backgroundColor = "rgb(0, 255, 0)";
+      colorNameElement.textContent = "GREEN";
+    };
+    document.getElementById("color-3").onclick = () => {
+      document.body.style.backgroundColor = "rgb(0, 0, 255)";
+      colorNameElement.textContent = "BLUE";
+    };
+    document.getElementById("color-4").onclick = () => {
+      document.body.style.backgroundColor = "rgb(255, 255, 0)";
+      colorNameElement.textContent = "YELLOW";
+    };
+    document.getElementById("color-5").onclick = () => {
+      document.body.style.backgroundColor = "rgb(255, 0, 255)";
+      colorNameElement.textContent = "PURPLE";
+    };
+    document.getElementById("color-6").onclick = () => {
+      document.body.style.backgroundColor = "rgb(0, 255, 255)";
+      colorNameElement.textContent = "CYAN";
+    };
+  </script>
+</html>
